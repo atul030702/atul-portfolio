@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: none;
+}
+
+:root{
+    --bg-greeting: #05092e;
+}
+
+.greeting-container{
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--bg-greeting);
+}
+
+.phone-frame{
+    width: 340px;
+    height: 600px;
+    background: #000;
+    padding: 12px;
+    position: relative;
+    border-radius: 1em;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.phone-frame > .inner-skin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+.phone-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #eaeaff;
+    border-radius: 1em;
+    padding: 1.5em;
+    position: absolute;
+
+    h1{
+        font-size: 45px;
+        font-weight: 700;
+        margin-bottom: 10px ;
+
+        span{
+            /*font-size: 1.5em;*/
+            text-decoration: underline;
+            text-decoration-color: #2b44ff;
+            text-decoration-style: solid;
+            text-decoration-thickness: 7px;
+        };
+    };
+
+    p{
+        font-size: 20px;
+        margin: 5px 0 15px 0;
+    };
+
+    .talk-btn{
+        font-size: 18px;
+        padding: 7.5px 15px;
+        cursor: pointer;
+        background-color: #2b44ff;
+        color: #fff;
+        border-radius: 13px;
+    };
+    .talk-btn:hover{
+        transform: scale(1.05);
+        transition: transform 0.2s ease-in-out;
+    };
+}
+
+.image-wrapper{
+    perspective: 1000px;
+    margin: 15px 7.5px;
+}
+
+@keyframes flipX {
+    0% {  transform: rotateY(0deg); }
+    25% { transform: rotateY(1080deg); }
+    100% { transform: rotateY(1080deg); }
+}
+
+.floating-img {
+    width: 250px;
+    height: 250px; 
+    border-radius: 50%;
+    object-fit: cover;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transform-origin: center center;
+    animation: flipX 3s linear infinite;
+    animation-play-state: running;
+}
+.floating-img:hover{
+    animation-play-state: paused;
+}

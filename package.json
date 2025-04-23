@@ -1,0 +1,27 @@
+{
+  "name": "my-portfolio",
+  "version": "1.0.0",
+  "description": "This is a portfolio website for Atul",
+  "keywords": [
+    "portfolio"
+  ],
+  "homepage": "https://github.com/atul030702/atul-portfolio#readme",
+  "bugs": {
+    "url": "https://github.com/atul030702/atul-portfolio/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atul030702/atul-portfolio.git"
+  },
+  "license": "ISC",
+  "author": "Atul Kumar",
+  "type": "module",
+  "scripts": {
+    "test": "jest",
+    "start": "parcel index.html --port 2000",
+    "build": "parcel build index.html"
+  },
+  "dependencies": {
+    "parcel": "^2.14.4"
+  }
+}
