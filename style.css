@@ -24,15 +24,16 @@ body{
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     background-color: var(--bg-greeting);
 }
 
 .phone-frame{
     width: 340px;
-    height: 600px;
+    height: 620px;
     background: #000;
-    padding: 12px;
+    padding: 10px;
+    margin: 40px auto;
     position: relative;
     border-radius: 1em;
     overflow: hidden;
@@ -42,14 +43,21 @@ body{
     justify-content: center;
 }
 
-.phone-frame > .inner-skin{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.phone-frame > .phone-notch{
     position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 140px;
+    height: 15px;
+    background-color: #000;
+    border-bottom-left-radius: 12.5px;
+    border-bottom-right-radius: 12.5px;
+    z-index: 2;
+    margin-top: 5px;
 }
 
-.phone-content{
+.phone-frame > .phone-content{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -58,6 +66,7 @@ body{
     border-radius: 1em;
     padding: 1.5em;
     position: absolute;
+    margin: 7.5px;
 
     h1{
         font-size: 45px;
@@ -65,7 +74,6 @@ body{
         margin-bottom: 10px ;
 
         span{
-            /*font-size: 1.5em;*/
             text-decoration: underline;
             text-decoration-color: #2b44ff;
             text-decoration-style: solid;
@@ -81,15 +89,29 @@ body{
     .talk-btn{
         font-size: 18px;
         padding: 7.5px 15px;
+        margin: 10px auto;
         cursor: pointer;
         background-color: #2b44ff;
         color: #fff;
         border-radius: 13px;
+        transition: all 0.2s ease-in-out;
     };
     .talk-btn:hover{
-        transform: scale(1.05);
-        transition: transform 0.2s ease-in-out;
+        transform: scale(1.1);
     };
+}
+
+.phone-frame > .phone-bottom-notch {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90px;
+    height: 10px;
+    background-color: #000;
+    border-radius: 10px;
+    z-index: 2;
+    margin-bottom: 10px;
 }
 
 .image-wrapper{
@@ -116,4 +138,119 @@ body{
 }
 .floating-img:hover{
     animation-play-state: paused;
+}
+
+.right-terminal{
+    height: 620px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 40px auto;
+}
+
+.recruitment-status{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #fff;
+    margin-bottom: 15px;
+
+    p{
+        font-size: 18px;
+    };
+
+    .status-body{
+        display: flex;
+        align-items: center;
+        justify-content: start;
+
+        .actively-looking{
+            font-size: 35px;
+        };
+
+        .notification-status{
+            height: 18px;
+            width: 18px;
+            background-color: #006600;
+            border-radius: 50%;
+            margin-right: 15px;
+            animation: flicker 1s infinite alternate;
+        };
+    };
+}
+
+@keyframes flicker {
+    0% { background-color: #006600; }
+    50% { background-color: #00ff00; }
+    100% { background-color: #006600; }
+}
+
+.terminal-window{
+    background-color: rgba(15, 15, 30, 0.9);
+    border: 2px solid rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    color: #f0f0f0;
+    font-family: "Fira Code", monospace;
+    max-width: 500px;
+    margin: 2rem auto;
+    box-shadow: 0 10px 25px rgba(0, 255, 150, 0.15);
+    backdrop-filter: blur(8px);
+}
+
+.info-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000;
+    padding: 0.6rem 1rem;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-bottom: 1rem;
+
+    .header-title{
+        flex-grow: 1;
+        text-align: center;
+        margin-right: 1.5rem;
+    }
+
+    .window-controls{
+        display: flex;
+        gap: 8px;
+
+        .dot{
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            display: inline-block;
+        };
+
+        .close{
+            background-color: #ff5f56;
+        };
+
+        .minimize{
+            background-color: #ffbd2e;
+        };
+
+        .maximize{
+            background-color: #27c93f;
+        }
+    };
+
+    h2{
+        flex-grow: 1;
+        text-align: center;
+        color: #00ffe0;
+        font-size: 1.1rem;
+        transform: translateX(-15px);
+    };
+}
+
+.info-body{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem 1.5rem;
 }

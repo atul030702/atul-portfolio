@@ -10,34 +10,49 @@
 <body>
     <div class="greeting-container">
         <div class="phone-frame">
-            <div class="inner-skin"></div>
+            <div class="phone-notch"></div>
             <div class="phone-content">
                 <h1><span>Namaste </span><br/> & Welcome, <br/> Stranger!</h1>
                 <div class="image-wrapper">
-                    <img class="floating-img" src="assets/me.webp" alt="My Avatar" loading="lazy"/>
+                    <img class="floating-img" src="/src/assets/me.webp" alt="My Avatar" loading="lazy"/>
                 </div>
                 <p>Let's build together...</p>
                 <button class="talk-btn">Let's Talk</button>
             </div>
-            
+            <div class="phone-bottom-notch"></div>
         </div>
 
         <div class="right-terminal">
-            <div class="status">
+            <div class="recruitment-status">
                 <p>Recruitment Status</p>
-                <p class="actively-looking">🟢 Actively Looking</p>
+                <div class="status-body">
+                    <span class="notification-status"></span>
+                    <p class="actively-looking">Actively Looking</p>
+                </div>
             </div>
             <div class="terminal-window">
-                <ul>
-                    <li>✅ Web Developer</li>
-                    <li>✅ JavaScript Learner</li>
-                    <li>✅ React.js</li>
-                    <li>✅ Frontend Specialist</li>
-                    <li>✅ Chess Fanatic (1250 on Chess.com)</li>
-                </ul>
+                <div class="info-header">
+                    <div class="header-title">
+                        <h2>&lt;/&gt; atul@portfolio</h2>
+                    </div>
+                    <div class="window-controls">
+                        <span class="dot minimize"></span>
+                        <span class="dot maximize"></span>
+                        <span class="dot close"></span>
+                    </div>
+                </div>
+                  
+                <div class="info-body">
+                    
+                </div>
+                
+                <div class="info-footer">
+                    <span class="label">Shell: ZSH</span>
+                    <span class="label">Device: Atul-Machine</span>
+                </div>
             </div>
         </div>
     </div>
 </body>
-<script src="/script.js" type="module"></script>
+<script src="./src/script.js" type="module"></script>
 </html>
