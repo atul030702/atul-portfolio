@@ -20,7 +20,6 @@ body{
 }
 
 .greeting-container{
-    padding: 20px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -28,12 +27,25 @@ body{
     background-color: var(--bg-greeting);
 }
 
+.hero-body{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px auto;
+}
+@media (max-width: 768px) {
+    .hero-body{
+        flex-direction: column-reverse;
+        margin: 5px 10px;
+    }
+}
+
 .phone-frame{
     width: 340px;
     height: 620px;
     background: #000;
     padding: 10px;
-    margin: 40px auto;
+    margin: 20px;
     position: relative;
     border-radius: 1em;
     overflow: hidden;
@@ -45,7 +57,7 @@ body{
 
 .phone-frame > .phone-notch{
     position: absolute;
-    top: 0;
+    top: 5px;
     left: 50%;
     transform: translateX(-50%);
     width: 140px;
@@ -54,7 +66,6 @@ body{
     border-bottom-left-radius: 12.5px;
     border-bottom-right-radius: 12.5px;
     z-index: 2;
-    margin-top: 5px;
 }
 
 .phone-frame > .phone-content{
@@ -103,7 +114,7 @@ body{
 
 .phone-frame > .phone-bottom-notch {
     position: absolute;
-    bottom: 0;
+    bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
     width: 90px;
@@ -111,7 +122,6 @@ body{
     background-color: #000;
     border-radius: 10px;
     z-index: 2;
-    margin-bottom: 10px;
 }
 
 .image-wrapper{
@@ -141,20 +151,36 @@ body{
 }
 
 .right-terminal{
-    height: 620px;
+    width: 60%;
+    max-width: 720px;
+    min-height: 610px;
+    margin: 20px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    margin: 40px auto;
+    transition: width 0.2s ease;
+    overflow: hidden;
+}
+.right-terminal::-webkit-scrollbar{
+    width: 5px;
+}
+.right-terminal::-webkit-scrollbar-thumb{
+    background-color: #00ff00;
+}
+@media (min-width: 1280px) {
+    .right-terminal{
+        width: 740px;
+    }
 }
 
 .recruitment-status{
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    color: #fff;
+    color: #f5f5f5;
     margin-bottom: 15px;
 
     p{
@@ -188,18 +214,24 @@ body{
 }
 
 .terminal-window{
+    width: 100%;
+    height: auto;
     background-color: rgba(15, 15, 30, 0.9);
     border: 2px solid rgba(255, 255, 255, 0.08);
     border-radius: 20px;
     color: #f0f0f0;
     font-family: "Fira Code", monospace;
-    max-width: 500px;
     margin: 2rem auto;
     box-shadow: 0 10px 25px rgba(0, 255, 150, 0.15);
     backdrop-filter: blur(8px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
 }
 
 .info-header{
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -212,7 +244,7 @@ body{
     .header-title{
         flex-grow: 1;
         text-align: center;
-        margin-right: 1.5rem;
+        margin-right: 1rem;
     }
 
     .window-controls{
@@ -249,8 +281,114 @@ body{
 }
 
 .info-body{
+    width: 100%;
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
     padding: 1rem 1.5rem;
+    font-family: "Fira Code", monospace;
+
+    .about-me{
+        width: 100%;
+        text-align: left;
+        margin: 10px auto 25px auto;
+        font-size: 18px;
+    };
+
+    p{
+        width: 100%;
+        margin: 5px auto;
+        text-align: left;
+    };
+
+    ul{
+        width: 100%;
+        list-style-type: none;
+        margin: 5px auto;
+    }
+
+    .list-item{
+        margin: 5px 0;
+        font-size: 1rem;
+        color: #d4d4d4;
+    }
+
+    .command{
+        color: #00ffff;
+        font-size: 18px;
+        font-weight: bold;
+
+        span{
+            font-style: italic;
+            padding: 0 7.5px 0 3px;
+        }
+    }
+}
+
+.input-line{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 15px;
+    margin: 10px auto 20px auto;
+
+    .prompt{
+        margin-right: 7.5px;
+    }
+}
+  
+.input-wrapper {
+    position: relative;
+    flex: 1;
+}
+  
+#command-input {
+    background: none;
+    border: none;
+    color: inherit;
+    font: inherit;
+    width: 100%;
+    outline: none;
+    caret-color: transparent;
+}
+  
+#fake-cursor {
+    position: absolute;
+    top: 0;
+    background-color: #00FF00;
+    width: 10px;
+    height: 1em;
+    animation: blink 1s steps(1) infinite;
+    pointer-events: none;
+    display: none;
+}
+  
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+.info-footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #000;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: #3d65d3;
+}
+
+@media (max-width: 768px) {
+    .right-terminal{
+        width: 100vw;
+        align-items: center;
+        justify-content: center;
+        margin: 5px;
+    }
+    .recruitment-status{
+        align-items: center;
+    }
 }
