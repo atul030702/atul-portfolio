@@ -21,6 +21,7 @@ body{
     --text-color: #ffffff;
     --surface-color: #151f2b;
     --nav-btn-color: #a8a9b4;
+    --btn-hover-color: #149ddd;
 }
 
 .container{
@@ -61,6 +62,35 @@ body{
         display: block;
         border: 8px solid #292f37;
         border-radius: 50%;
+    }
+
+    .social-icons{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-block: 20px;
+        gap: 10px;
+    }
+
+    .social-icons a{
+        width: 40px;
+        height: 40px;
+        margin: 0 2px;
+        background-color: #292f37;
+        border-radius: 50%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+
+        img{
+            height: 25px;
+            width: 25px;
+        }
+    }
+    .social-icons a:hover{
+        background-color: var(--btn-hover-color);
     }
 
     .nav-links{
