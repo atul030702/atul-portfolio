@@ -22,6 +22,7 @@
     "build": "parcel build index.html"
   },
   "dependencies": {
-    "parcel": "^2.14.4"
+    "parcel": "^2.14.4",
+    "typed.js": "^2.1.0"
   }
 }

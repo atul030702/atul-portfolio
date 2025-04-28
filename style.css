@@ -17,11 +17,12 @@ body{
 
 :root{
     --bg-sidebar: #040b14;
+    --bg-content: #e8eaf6;
     --bg-terminal: #05092e;
     --text-color: #ffffff;
     --surface-color: #151f2b;
     --nav-btn-color: #a8a9b4;
-    --btn-hover-color: #149ddd;
+    --btn-hover-color: #355A90;
 }
 
 .container{
@@ -140,45 +141,33 @@ body{
 }
 
 .content{
-    height: 100vh;
+    min-height: 100vh;
     margin-left: 300px;
-    padding: 20px;
-    overflow-y: scroll;
+    overflow-y: auto;
     width: calc(100% - 300px);
+    background-color: var(--bg-content);
 }
 
 .right-terminal{
-    width: 60%;
-    max-width: 720px;
-    min-height: 610px;
-    margin: 20px;
+    width: 100%;
+    height: 100vh;
+    padding: 25px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    transition: width 0.2s ease;
-    overflow: hidden;
-}
-.right-terminal::-webkit-scrollbar{
-    width: 5px;
-}
-.right-terminal::-webkit-scrollbar-thumb{
-    background-color: #00ff00;
-}
-@media (min-width: 1280px) {
-    .right-terminal{
-        width: 740px;
-    }
+    background-color: #02355a;
+    overflow-y: hidden;
 }
 
 .recruitment-status{
-    width: 100%;
+    width: max-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    color: #f5f5f5;
-    margin-bottom: 15px;
+    color: var(--text-color);
+    margin-bottom: 50px;
 
     p{
         font-size: 18px;
@@ -190,7 +179,7 @@ body{
         justify-content: start;
 
         .actively-looking{
-            font-size: 35px;
+            font-size: 30px;
         };
 
         .notification-status{
@@ -210,16 +199,43 @@ body{
     100% { background-color: #006600; }
 }
 
+.typewriter{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: var(--text-color);
+    margin-block: 25px;
+    gap: 7.5px;
+
+    h1{
+        font-size: 50px;
+    }
+
+    h2{
+        font-size: 26px;
+    }
+
+    .auto-type{
+        text-decoration: underline;
+        text-decoration-color: #00FF00;
+        text-decoration-thickness: 2.5px;
+    }
+}
+
 .terminal-window{
     width: 100%;
-    height: auto;
+    max-width: 800px;
+    min-width: 320px;
+    height: max-content;
     background-color: rgba(15, 15, 30, 0.9);
     border: 2px solid rgba(255, 255, 255, 0.08);
     border-radius: 20px;
     color: #f0f0f0;
     font-family: "Fira Code", monospace;
     margin: 2rem auto;
-    box-shadow: 0 10px 25px rgba(0, 255, 150, 0.15);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
     backdrop-filter: blur(8px);
     display: flex;
     flex-direction: column;
