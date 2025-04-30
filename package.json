@@ -24,5 +24,8 @@
   "dependencies": {
     "parcel": "^2.14.4",
     "typed.js": "^2.1.0"
+  },
+  "devDependencies": {
+    "svgo": "^3.3.2"
   }
 }
