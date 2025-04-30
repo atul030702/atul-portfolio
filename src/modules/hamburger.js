@@ -2,17 +2,15 @@
 const hamburger = document.getElementById("hamburger");
 const sidebar = document.getElementById("sidebar");
 
-function showSidebar() {
-    let isOpen = false;
+let isOpen = false;
 
+function showSidebar() {
     const toggleBgColor = () => {
         isOpen = !isOpen;
         sidebar.classList.toggle("active");
 
-        hamburger.style.transition = "none";
-        hamburger.style.backgroundColor = isOpen ? "#38bdf8" : "292f37";
-
-        hamburger.style.transition = "";
+        hamburger.style.backgroundColor = isOpen ? "#64748b" : "#292f37";
+        hamburger.title = isOpen ? "Close Sidebar" : "Expand Sidebar";
     }
 
     hamburger.addEventListener("click", toggleBgColor);
