@@ -1,22 +1,43 @@
-
 const hamburger = document.getElementById("hamburger");
 const sidebar = document.getElementById("sidebar");
 
 let isOpen = false;
 
-function showSidebar() {
-    const toggleBgColor = () => {
-        isOpen = !isOpen;
-        sidebar.classList.toggle("active");
+function toggleSidebar(forceClose = false) {
+    const shouldOpen = !forceClose && !isOpen;
+    isOpen = shouldOpen;
 
-        hamburger.style.backgroundColor = isOpen ? "#64748b" : "#292f37";
-        hamburger.title = isOpen ? "Close Sidebar" : "Expand Sidebar";
+    sidebar.classList.toggle("active", shouldOpen);
+    hamburger.style.backgroundColor = shouldOpen ? "#64748b" : "#292f37";
+    hamburger.title = shouldOpen ? "Close Sidebar" : "Expand Sidebar";
+}
+
+function showSidebar() {
+
+    hamburger.addEventListener("click", () => toggleSidebar());
+
+
+    const sidebarLinks = sidebar.querySelectorAll("a");
+    sidebarLinks.forEach(link => {
+        link.addEventListener("click", () => toggleSidebar(true));
+    });
+
+
+    document.addEventListener("click", handleClickOutside);
+
+    function handleClickOutside(e) {
+        const clickedOutside =
+            !sidebar.contains(e.target) && !hamburger.contains(e.target);
+        if (isOpen && clickedOutside) toggleSidebar(true);
     }
 
-    hamburger.addEventListener("click", toggleBgColor);
 
     return function cleanUpSidebarToggle() {
-        hamburger.removeEventListener("click", toggleBgColor);
+        hamburger.removeEventListener("click", toggleSidebar);
+        sidebarLinks.forEach(link =>
+            link.removeEventListener("click", () => toggleSidebar(true))
+        );
+        document.removeEventListener("click", handleClickOutside);
     };
 }
 
