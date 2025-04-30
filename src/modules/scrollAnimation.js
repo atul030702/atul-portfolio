@@ -1,4 +1,4 @@
-function animateOnScroll() {
+export function animateOnScroll() {
     const sections = document.querySelectorAll(".fade-in-section");
 
     const observer = new IntersectionObserver((entries, observer) => {
@@ -17,5 +17,3 @@ function animateOnScroll() {
 
     sections.forEach((section) => observer.observe(section));
 }
-
-export default animateOnScroll;
