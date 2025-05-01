@@ -1,5 +1,6 @@
 const hamburger = document.getElementById("hamburger");
 const sidebar = document.getElementById("sidebar");
+const closeSidebar = document.getElementById("close");
 
 let isOpen = false;
 
@@ -8,13 +9,14 @@ function toggleSidebar(forceClose = false) {
     isOpen = shouldOpen;
 
     sidebar.classList.toggle("active", shouldOpen);
-    hamburger.style.backgroundColor = shouldOpen ? "#64748b" : "#292f37";
-    hamburger.title = shouldOpen ? "Close Sidebar" : "Expand Sidebar";
+    //hamburger.style.backgroundColor = shouldOpen ? "#64748b" : "#292f37";
+
 }
 
 function showSidebar() {
 
     hamburger.addEventListener("click", () => toggleSidebar());
+    closeSidebar.addEventListener("click", () => toggleSidebar());
 
 
     const sidebarLinks = sidebar.querySelectorAll("a");
@@ -34,6 +36,7 @@ function showSidebar() {
 
     return function cleanUpSidebarToggle() {
         hamburger.removeEventListener("click", toggleSidebar);
+        closeSidebar.removeEventListener("click", toggleSidebar);
         sidebarLinks.forEach(link =>
             link.removeEventListener("click", () => toggleSidebar(true))
         );
