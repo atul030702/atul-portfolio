@@ -52,12 +52,6 @@
                     </a>
                 </li>
                 <li>
-                    <a id="resumeLink" class="nav-link" href="#resume">
-                        <img class="nav-icon" src="./src/assets/resume-icon.svg" alt="Resume Icon"/>
-                        Resume
-                    </a>
-                </li>
-                <li>
                     <a id="projectLink" class="nav-link" href="#projects">
                         <img class="nav-icon" src="./src/assets/project-icon.svg" alt="Project Icon"/>
                         Projects
@@ -69,12 +63,18 @@
                         Contact
                     </a>
                 </li>
+                <li>
+                    <a id="resumeLink" class="nav-link" href="#more-details">
+                        <img class="nav-icon" src="./src/assets/resume-icon.svg" alt="Document Icon"/>
+                        Meet Atul
+                    </a>
+                </li>
             </ul>
         </nav>
 
         <main class="content">
             <section id="home">
-                <div class="right-terminal">
+                <div class="right-terminal" aria-labelledby="Home Section">
                     <div class="recruitment-status">
                         <p>Recruitment Status</p>
                         <div class="status-body">
@@ -132,59 +132,193 @@
                 </div>
             </section>
             <section id="about">
-                <div class="about-container">
-                    <h2>About</h2>
+                <div class="about-container" aria-labelledby="About Me">
+                    <h2 class="section-name">About Me</h2>
                     <div class="intro fade-in-section">
                         <p>
-                            I'm a self-taught developer who transitioned into tech through a non-traditional path. My journey originally began with a focused pursuit of a career in the Indian Armed Forces, which instilled in me discipline, resilience, and a strong work ethic. Over time, my passion for problem-solving and innovation led me to pivot into technology. For the past year, I've been deeply immersed in JavaScript, React, and the broader front-end ecosystem, building projects and honing my skills.
+                            Pragmatic frontend developer skilled in HTML, CSS, JavaScript, and React, with hands-on experience building responsive, scalable web apps. I turn complex UI problems into intuitive user experiences with clean, modular code.
                         </p>
                         <p>
-                            I'm currently expanding my capabilities by learning backend development, Data Structures & Algorithms, and exploring the fast-evolving landscape of Generative AI. My long-term vision is to grow into a well-rounded full-stack developer, capable of building intelligent, scalable, and impactful applications that solve real-world problems.
+                            Built real-world projects like a weather app and a Swiggy-style food ordering platform, integrating live APIs and serverless functions. Fast learner, self-starter, team-ready, and eager to contribute to impactful, user-focused products.
                         </p>
                         
                     </div>
+
+                    <div class="skill-container">
+                        <div class="inner">
+                            <div class="tag"><span>#</span>HTML</div>
+                            <div class="tag"><span>#</span>CSS</div>
+                            <div class="tag"><span>#</span>Tailwind</div>
+                            <div class="tag"><span>#</span>JS ES6+</div>
+                            <div class="tag"><span>#</span>React.js</div>
+                            <div class="tag"><span>#</span>Redux</div>
+                            <div class="tag"><span>#</span>Git/GitHub</div>
+                            <div class="tag"><span>#</span>Parcel</div>
+                            <div class="tag"><span>#</span>UI/UX</div>
+                            <div class="tag"><span>#</span>HTML</div>
+                            <div class="tag"><span>#</span>CSS</div>
+                            <div class="tag"><span>#</span>Tailwind</div>
+                            <div class="tag"><span>#</span>JS ES6+</div>
+                            <div class="tag"><span>#</span>React.js</div>
+                            <div class="tag"><span>#</span>Redux</div>
+                            <div class="tag"><span>#</span>Git/GitHub</div>
+                            <div class="tag"><span>#</span>Parcel</div>
+                            <div class="tag"><span>#</span>UI/UX</div>
+                        </div>
+                        <div class="fade"></div>
+                    </div>
+                    
+                    
                     <div class="about-details fade-in-section">
-                        <img class="about-image" src="./src/assets/me.webp" alt="My Avatar" loading="lazy" draggable="false"/>
-                        <div class="about-content fade-in-section">
-                            <h3>Web Developer</h3>
-                            <p><em>Always learning, building, and refining- driven by a passion for intuitive, clean, and modern web technologies.</em></p>
+                        <div class="avatar-container">
+                            <img class="about-image" src="./src/assets/me.webp" alt="My Avatar" loading="lazy" draggable="false"/>
+                        </div>
+                        <div class="about-content">
                             <ul>
+                                <!--<li>
+                                    <a href="/resume.pdf" download class="download-resume-btn">Download CV</a>
+                                </li>-->
                                 <li>
-                                    <img src="./src/assets/chevron_right.svg" alt="Chevron Right" class="chevron-right"/>
-                                    <strong>Website:</strong>
-                                    https://dev-atul.vercel.app
-                                </li>
+                                    <img class="chevron-right" src="./src/assets/chevron_right.svg" alt="Chevron Icon" loading="lazy" draggable="false"/>
+                                    Building Projects</li>
                                 <li>
-                                    <img src="./src/assets/chevron_right.svg" alt="Chevron Right" class="chevron-right"/>
-                                    <strong>City:</strong>
-                                    Patna, India
-                                </li>
+                                    <img class="chevron-right" src="./src/assets/chevron_right.svg" alt="Chevron Icon" loading="lazy" draggable="false"/>
+                                    3⭐ @ HackerRank</li>
                                 <li>
-                                    <img src="./src/assets/chevron_right.svg" alt="Chevron Right" class="chevron-right"/>
-                                    <strong>Email:</strong>
-                                    singhatul0307@gmail.com
-                                </li>
+                                    <img  class="chevron-right"src="./src/assets/chevron_right.svg" alt="Chevron Icon" loading="lazy" draggable="false"/>
+                                    Frontend Development Intern</li>
                                 <li>
-                                    <img src="./src/assets/chevron_right.svg" alt="Chevron Right" class="chevron-right"/>
-                                    <strong>Freelance:</strong>
-                                    Available
-                                </li>
+                                    <img class="chevron-right" src="./src/assets/chevron_right.svg" alt="Chevron Icon" loading="lazy" draggable="false"/>
+                                    Learning DSA & Fullstack</li>
                                 <li>
-                                    <img src="./src/assets/chevron_right.svg" alt="Chevron Right" class="chevron-right"/>
-                                    <strong>Degree:</strong>
-                                    B.Sc
+                                    <img class="chevron-right" src="./src/assets/chevron_right.svg" alt="Chevron Icon" loading="lazy" draggable="false"/>
+                                    Physics Tutor & SSB Guide</li>
+                                <li>
+                                    <img class="chevron-right" src="./src/assets/chevron_right.svg" alt="Chevron Icon" loading="lazy" draggable="false"/>
+                                    Environmentalist</li>
+                                <li>
+                                    <img class="chevron-right" src="./src/assets/chevron_right.svg" alt="Chevron Icon" loading="lazy" draggable="false"/>
+                                    B.Sc (Patliputra University)</li>
+                                <li class="social-icon-li">
+                                    <a title="GitHub" href="https://github.com/atul030702" target="_blank" rel="noopener noreferrer">
+                                        <img src="./src/assets/github.webp" alt="GitHub Icon" draggable="false" loading="lazy"/>
+                                    </a>
+                                    <a title="LinkedIn" href="https://www.linkedin.com/in/atul030702/" target="_blank" rel="noopener noreferrer">
+                                        <img src="./src/assets/linkedin.webp" alt="LinkedIn Icon" draggable="false" loading="lazy"/>
+                                    </a>
                                 </li>
                             </ul>
                         </div>
                     </div>
-                    <div class="goal fade-in-section">
-                        <h3 class="goal-title">Vision</h3>
-                        <p>
-                            Beyond technology, I’m deeply committed to environmental sustainability. I’ve independently done many afforestation drives and have actively contributed to wildlife conservation efforts. Notably, I volunteered with the Wildlife Trust of India to support vulture conservation, assisting in the identification of nesting and breeding sites. I firmly believe that the future of innovation lies at the intersection of sustainability and technology — and I aspire to contribute to solutions that reflect this vision.
-                        </p>
-                    </div>
                 </div>
             </section>
+            <!--<section id="peojects">
+                <div class="resume-container" aria-labelledby="Resume Section">
+                    <h2 class="section-name">Resume</h2>
+                    <div class="skill-container">
+                        <div class="inner">
+                            <div class="tag"><span>#</span>HTML</div>
+                            <div class="tag"><span>#</span>CSS</div>
+                            <div class="tag"><span>#</span>Tailwind</div>
+                            <div class="tag"><span>#</span>JS ES6+</div>
+                            <div class="tag"><span>#</span>React.js</div>
+                            <div class="tag"><span>#</span>Redux</div>
+                            <div class="tag"><span>#</span>Git/GitHub</div>
+                            <div class="tag"><span>#</span>Parcel</div>
+                            <div class="tag"><span>#</span>UI/UX</div>
+                            <div class="tag"><span>#</span>HTML</div>
+                            <div class="tag"><span>#</span>CSS</div>
+                            <div class="tag"><span>#</span>Tailwind</div>
+                            <div class="tag"><span>#</span>JS ES6+</div>
+                            <div class="tag"><span>#</span>React.js</div>
+                            <div class="tag"><span>#</span>Redux</div>
+                            <div class="tag"><span>#</span>Git/GitHub</div>
+                            <div class="tag"><span>#</span>Parcel</div>
+                            <div class="tag"><span>#</span>UI/UX</div>
+                        </div>
+                        <div class="fade"></div>
+                    </div>
+                    <div class="experience">
+                        <div class="column-left">
+                            <div class="timeline-item">
+                                <h3 class="item-header" role="heading">Summary</h3>
+                                <div class="item-container">
+                                    <div class="item">
+                                        <h4>ATUL KUMAR</h4>
+                                        <p>Pragmatic and growth-driven frontend developer with hands-on experience in building responsive, scalable web applications using HTML, CSS, JavaScript, and React. I specialize in turning complex UI challenges into intuitive user experiences, with a strong focus on performance, modular code, and modern best practices. Currently honing my skills through real-world projects.   
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <h3 class="item-header" role="heading">Skills</h3>
+                                <div class="item-container">
+                                    <div class="item">
+                                        <h4>LANGUAGES</h4>
+                                        <p>HTML, CSS, JavaScript</p>
+                                    </div>
+                                    <div class="item">
+                                        <h4>FRAMEWORKS & LIBRARIES</h4>
+                                        <p>React.js, Redux Toolkit, Tailwind CSS</p>
+                                    </div>
+                                    <div class="item">
+                                        <h4>BUNDLERS & TOOLS</h4>
+                                        <p>Parcel, Git, GitHub, Chrome DevTools</p>
+                                    </div>
+                                    <div class="item">
+                                        <h4>SOFT SKILLS</h4>
+                                        <p>Problem-Solving, Communication, Team Collaboration, Fast Learning</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="column-right">
+                            <div class="timeline-item">
+                                <h3 class="item-header">Professional Experience</h3>
+                                <div class="item-container">
+                                    <div class="item">
+                                        <h4>FRONTEND DEVELOPMENT INTERN</h4>
+                                        <span class="duration">April 2025 - Present</span>
+                                        <p class="institution">Unified Mentors Pvt Ltd (Remote)</p>
+                                        <ul>
+                                            <li>Collaborating on frontend features using React.js and modern JavaScript.</li>
+                                            <li>Contributing to responsive UI development with Tailwind CSS and standard CSS.</li>
+                                            <li>Engaging with Git-based workflows and RESTful API integration in live projects.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="item">
+                                        <h4>TEACHER</h4>
+                                        <span class="duration">Apr 2023 – Nov 2024</span>
+                                        <p class="institution">Aditya Physics Classes, Patna, Bihar</p>
+                                        <ul>
+                                          <li>Taught Physics to Classes 9, 10, and 11 for board exam preparation.</li>
+                                          <li>Taught Maths and Biology for Classes 9 and 10 with a focus on conceptual clarity.</li>
+                                          <li>Created lesson plans, guided revisions, and tracked student performance.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <h3 class="item-header">Education</h3>
+                                <div class="item-container">
+                                    <div class="item">
+                                        <h4>BACHELOR OF SCIENCE</h4>
+                                        <span class="duration">2020 - 2023</span>
+                                        <p class="institution">Patliputra University, Bihar</p>
+                                    </div>
+                                    <div class="item">
+                                        <h4>INTERMEDIATE</h4>
+                                        <span class="duration">2017 - 2019</span>
+                                        <p class="institution">A.N. College, Bihar</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>-->
         </main>
     </div>
 </body>
