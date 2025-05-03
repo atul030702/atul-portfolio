@@ -11,9 +11,11 @@
 </head>
 <body>
     <div class="container">
-        <button id="hamburger" class="hamburger-icon" aria-label="Toggle navigation" title="Expand Sidebar">
-            <img src="./src/assets/menu-icon.svg" alt="Menu" draggable="false" loading="lazy"/>
-        </button>
+        <div class="horizontal-menu">
+            <button id="hamburger" class="hamburger-icon" aria-label="Toggle navigation" title="Expand Sidebar">
+                <img src="./src/assets/menu-icon.svg" alt="Menu" draggable="false" loading="lazy"/>
+            </button>
+        </div>
 
         <nav id="sidebar" class="sidebar" aria-label="Sidebar">
             <button class="collapse-sidebar" id="close">
@@ -88,6 +90,7 @@
                         <h2>I'm a 
                             <span id="autotype" class="auto-type"></span> 
                         </h2>
+                        
                     </div>
 
                     <div class="terminal-window">
@@ -132,8 +135,8 @@
                 </div>
             </section>
             <section id="about">
-                <div class="about-container" aria-labelledby="About Me">
-                    <h2 class="section-name">About Me</h2>
+                <div class="about-container" aria-labelledby="About Me Section">
+                    <h2 class="section-name">ABOUT ME</h2>
                     <div class="intro fade-in-section">
                         <p>
                             Pragmatic frontend developer skilled in HTML, CSS, JavaScript, and React, with hands-on experience building responsive, scalable web apps. I turn complex UI problems into intuitive user experiences with clean, modular code.
@@ -176,29 +179,36 @@
                         <div class="about-content">
                             <ul>
                                 <!--<li>
-                                    <a href="/resume.pdf" download class="download-resume-btn">Download CV</a>
+                                    <a href="/resume.pdf" download="Atul_Kumar_Resume" class="download-resume-btn">Download CV</a>
                                 </li>-->
                                 <li>
                                     <img class="chevron-right" src="./src/assets/chevron_right.svg" alt="Chevron Icon" loading="lazy" draggable="false"/>
-                                    Building Projects</li>
+                                    Building Projects
+                                </li>
                                 <li>
                                     <img class="chevron-right" src="./src/assets/chevron_right.svg" alt="Chevron Icon" loading="lazy" draggable="false"/>
-                                    3⭐ @ HackerRank</li>
+                                    3⭐ @ HackerRank
+                                </li>
                                 <li>
                                     <img  class="chevron-right"src="./src/assets/chevron_right.svg" alt="Chevron Icon" loading="lazy" draggable="false"/>
-                                    Frontend Development Intern</li>
+                                    Frontend Development Intern
+                                </li>
                                 <li>
                                     <img class="chevron-right" src="./src/assets/chevron_right.svg" alt="Chevron Icon" loading="lazy" draggable="false"/>
-                                    Learning DSA & Fullstack</li>
+                                    Learning DSA & Fullstack
+                                </li>
                                 <li>
                                     <img class="chevron-right" src="./src/assets/chevron_right.svg" alt="Chevron Icon" loading="lazy" draggable="false"/>
-                                    Physics Tutor & SSB Guide</li>
+                                    Environmentalist
+                                </li>
                                 <li>
                                     <img class="chevron-right" src="./src/assets/chevron_right.svg" alt="Chevron Icon" loading="lazy" draggable="false"/>
-                                    Environmentalist</li>
+                                    Freelance (Available)
+                                </li>
                                 <li>
                                     <img class="chevron-right" src="./src/assets/chevron_right.svg" alt="Chevron Icon" loading="lazy" draggable="false"/>
-                                    B.Sc (Patliputra University)</li>
+                                    B.Sc (Patliputra University)
+                                </li>
                                 <li class="social-icon-li">
                                     <a title="GitHub" href="https://github.com/atul030702" target="_blank" rel="noopener noreferrer">
                                         <img src="./src/assets/github.webp" alt="GitHub Icon" draggable="false" loading="lazy"/>
@@ -212,113 +222,59 @@
                     </div>
                 </div>
             </section>
-            <!--<section id="peojects">
-                <div class="resume-container" aria-labelledby="Resume Section">
-                    <h2 class="section-name">Resume</h2>
-                    <div class="skill-container">
-                        <div class="inner">
-                            <div class="tag"><span>#</span>HTML</div>
-                            <div class="tag"><span>#</span>CSS</div>
-                            <div class="tag"><span>#</span>Tailwind</div>
-                            <div class="tag"><span>#</span>JS ES6+</div>
-                            <div class="tag"><span>#</span>React.js</div>
-                            <div class="tag"><span>#</span>Redux</div>
-                            <div class="tag"><span>#</span>Git/GitHub</div>
-                            <div class="tag"><span>#</span>Parcel</div>
-                            <div class="tag"><span>#</span>UI/UX</div>
-                            <div class="tag"><span>#</span>HTML</div>
-                            <div class="tag"><span>#</span>CSS</div>
-                            <div class="tag"><span>#</span>Tailwind</div>
-                            <div class="tag"><span>#</span>JS ES6+</div>
-                            <div class="tag"><span>#</span>React.js</div>
-                            <div class="tag"><span>#</span>Redux</div>
-                            <div class="tag"><span>#</span>Git/GitHub</div>
-                            <div class="tag"><span>#</span>Parcel</div>
-                            <div class="tag"><span>#</span>UI/UX</div>
-                        </div>
-                        <div class="fade"></div>
-                    </div>
-                    <div class="experience">
-                        <div class="column-left">
-                            <div class="timeline-item">
-                                <h3 class="item-header" role="heading">Summary</h3>
-                                <div class="item-container">
-                                    <div class="item">
-                                        <h4>ATUL KUMAR</h4>
-                                        <p>Pragmatic and growth-driven frontend developer with hands-on experience in building responsive, scalable web applications using HTML, CSS, JavaScript, and React. I specialize in turning complex UI challenges into intuitive user experiences, with a strong focus on performance, modular code, and modern best practices. Currently honing my skills through real-world projects.   
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <h3 class="item-header" role="heading">Skills</h3>
-                                <div class="item-container">
-                                    <div class="item">
-                                        <h4>LANGUAGES</h4>
-                                        <p>HTML, CSS, JavaScript</p>
-                                    </div>
-                                    <div class="item">
-                                        <h4>FRAMEWORKS & LIBRARIES</h4>
-                                        <p>React.js, Redux Toolkit, Tailwind CSS</p>
-                                    </div>
-                                    <div class="item">
-                                        <h4>BUNDLERS & TOOLS</h4>
-                                        <p>Parcel, Git, GitHub, Chrome DevTools</p>
-                                    </div>
-                                    <div class="item">
-                                        <h4>SOFT SKILLS</h4>
-                                        <p>Problem-Solving, Communication, Team Collaboration, Fast Learning</p>
-                                    </div>
+            <section id="projects">
+                <div class="project-container" aria-labelledby="Project Section">
+                    <h2 class="section-name" role="heading">PROJECTS</h2>
+                    <p class="project-section-description">
+                        Explore a curated section of projects I’ve built — from personal experiments to real-world client solutions and each backed by practical use cases and clean, scalable code.
+                    </p>
+                    <div class="project-grid">
+                        <div class="project-card">
+                            <img src="./src/assets/home-page.png" alt="Grab&Go App Screenshot" loading="lazy" decoding="async" draggable="false"/>
+                            <div class="project-description">
+                                <h3>Grab&Go</h3>
+                                <p>Grab & Go is a sleek food ordering web application inspired by Swiggy, built using React, Context API, Tailwind CSS, and Parcel. It offers users a smooth browsing experience of restaurant menus, high-rated filters, and a dynamic cart system — all managed seamlessly through client-side state. Designed with performance and modularity in mind, Grab & Go demonstrates real-world integration of third-party APIs and modern frontend architecture.</p>
+                                <ul>
+                                    <li>React</li>
+                                    <li>ContextAPI</li>
+                                    <li>Tailwind</li>
+                                    <li>Parcel</li>
+                                </ul>
+                                <div class="project-links">
+                                    <a href="https://grab-go.vercel.app/" target="_blank" rel="noopener noreferrer">
+                                        VISIT PROJECT
+                                    </a>
+                                    <a href="https://github.com/atul030702/Grab-and-Go" target="_blank" rel="noopener noreferrer">
+                                        GITHUB
+                                    </a>
                                 </div>
                             </div>
                             
                         </div>
-                        <div class="column-right">
-                            <div class="timeline-item">
-                                <h3 class="item-header">Professional Experience</h3>
-                                <div class="item-container">
-                                    <div class="item">
-                                        <h4>FRONTEND DEVELOPMENT INTERN</h4>
-                                        <span class="duration">April 2025 - Present</span>
-                                        <p class="institution">Unified Mentors Pvt Ltd (Remote)</p>
-                                        <ul>
-                                            <li>Collaborating on frontend features using React.js and modern JavaScript.</li>
-                                            <li>Contributing to responsive UI development with Tailwind CSS and standard CSS.</li>
-                                            <li>Engaging with Git-based workflows and RESTful API integration in live projects.</li>
-                                        </ul>
-                                    </div>
-                                    <div class="item">
-                                        <h4>TEACHER</h4>
-                                        <span class="duration">Apr 2023 – Nov 2024</span>
-                                        <p class="institution">Aditya Physics Classes, Patna, Bihar</p>
-                                        <ul>
-                                          <li>Taught Physics to Classes 9, 10, and 11 for board exam preparation.</li>
-                                          <li>Taught Maths and Biology for Classes 9 and 10 with a focus on conceptual clarity.</li>
-                                          <li>Created lesson plans, guided revisions, and tracked student performance.</li>
-                                        </ul>
-                                    </div>
+                        <div class="project-card">
+                            <img src="./src/assets/weather-page.png" alt="Sky-Cast App Screenshot" loading="lazy" decoding="async" draggable="false"/>
+                            <div class="project-description">
+                                <h3>Sky-Cast</h3>
+                                <p>Sky-Cast is a real-time weather forecasting web application built using HTML, CSS, and JavaScript, powered by WeatherAPI for dynamic weather data and OpenWeather for precise geocoding. It offers users seamless location-based weather search with intelligent input suggestions and displays clearly timestamped updates for current conditions. Designed for clarity and responsiveness, Sky-Cast ensures a fast, informative, and accessible experience across devices — making it a polished showcase of both API integration and frontend development skills.</p>
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JavaScript</li>
+                                    <li>RESTful API</li>    
+                                </ul>
+                                <div class="project-links">
+                                    <a href="https://sky-cast-coral.vercel.app/" target="_blank" rel="noopener noreferrer">
+                                        VISIT PROJECT
+                                    </a>
+                                    <a href="https://github.com/atul030702/weather_data" target="_blank" rel="noopener noreferrer">
+                                        GITHUB
+                                    </a>
                                 </div>
-                            </div>
-                            <div class="timeline-item">
-                                <h3 class="item-header">Education</h3>
-                                <div class="item-container">
-                                    <div class="item">
-                                        <h4>BACHELOR OF SCIENCE</h4>
-                                        <span class="duration">2020 - 2023</span>
-                                        <p class="institution">Patliputra University, Bihar</p>
-                                    </div>
-                                    <div class="item">
-                                        <h4>INTERMEDIATE</h4>
-                                        <span class="duration">2017 - 2019</span>
-                                        <p class="institution">A.N. College, Bihar</p>
-                                    </div>
-                                </div>
-                            </div>
+                            </div>   
                         </div>
-                        
                     </div>
                 </div>
-            </section>-->
+            </section>
         </main>
     </div>
 </body>
