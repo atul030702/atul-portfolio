@@ -373,6 +373,9 @@ body{
 }
 
 .project-section {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
     color: var(--btn-hover-color);
     font-size: 18px;
@@ -438,7 +441,7 @@ body{
         font-family: "Inter", sans-serif;
 
         .actively-looking {
-            font-size: 22px;
+            font-size: 20px;
         }
     }
 
@@ -446,9 +449,14 @@ body{
         font-size: 26px;
     }
 
+    .home-buttons {
+        justify-content: center;
+    }
+
     .project-section,
     .resume-download {
         font-size: 16px;
+        padding: 7.5px 12.5px;
     }
 
     .notification-status {
