@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">    
     <link rel="stylesheet" href="./style.css"/>
     <title>Atul Kumar</title>
 </head>
@@ -15,6 +15,9 @@
             <button id="hamburger" class="hamburger-icon" aria-label="Toggle navigation" title="Expand Sidebar">
                 <img src="./src/assets/menu-icon.svg" alt="Menu" draggable="false" loading="lazy"/>
             </button>
+            <div>
+                <a href="#home" class="decorated-text">Atul Kumar</a>
+            </div>
         </div>
 
         <nav id="sidebar" class="sidebar" aria-label="Sidebar">
@@ -77,27 +80,33 @@
         <main class="content">
             <section id="home">
                 <div class="right-terminal" aria-labelledby="Home Section">
-                    <div class="recruitment-status">
-                        <p>Recruitment Status</p>
-                        <div class="status-body">
-                            <span class="notification-status"></span>
-                            <p class="actively-looking">Open to New Opportunities</p>
+                    <div class="hero-container">
+                        <div class="recruitment-status">
+                            <div class="status-body">
+                                <span class="notification-status"></span>
+                                <p class="actively-looking">Open to New Opportunities</p>
+                            </div>
+                            <div class="header-container">
+                                <h1>Frontend Developer & <br/> <span id="autotype"></span></h1>
+                            </div>
+                            <div class="home-description">
+                                <p>Crafting responsive, real-world apps with performance in mind.</p>
+                            </div>
+                            <div class="home-buttons">
+                                <a class="project-section" href="#projects">View My Work</a>
+                                <a class="resume-download" href="./src/assets/Atul_Kumar_Frontend_0YrExp.pdf" download="Atul_Kumar_Resume">
+                                    <img src="./src/assets/download_icon.svg" alt="download icon" draggable="false" loading="lazy" decoding="async"/>
+                                    Download CV       
+                                </a>
+                            </div>
+                        </div>
+    
+                        <div class="typewriter">
+                            <img src="./src/assets/me.webp" alt="My Avatar" loading="lazy" decoding="async"/>
                         </div>
                     </div>
 
-                    <div class="typewriter">
-                        <h1>Atul Kumar</h1>
-                        <h2>I'm a 
-                            <span id="autotype" class="auto-type"></span> 
-                        </h2>
-                        <a class="resume-download" href="./src/assets/Atul_Kumar_Frontend_0YrExp.pdf" download="Atul_Kumar_Resume">
-                            <img src="./src/assets/download_icon.svg" alt="download icon" draggable="false" loading="lazy" decoding="async"/>
-                            Download CV       
-                        </a>
-                        
-                    </div>
-
-                    <div class="terminal-window">
+                    <!-- <div class="terminal-window">
                         <div class="info-header">
                             <div class="header-title">
                                 <h2>&lt;/&gt; atul@portfolio</h2>
@@ -135,7 +144,7 @@
                             <span class="label">Shell: ZSH</span>
                             <span class="label">Device: Atul-Machine</span>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </section>
             <section id="about">

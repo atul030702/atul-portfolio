@@ -7,7 +7,7 @@ export function autoType() {
 
     if(!typedInstance) {
         typedInstance = new Typed(autoTyped, {
-            strings: ["Web Developer.","Frontend Specialist.", "Self Taught Developer.","Environmentalist.", "Chess Geek."],
+            strings: ["UI Designer","React Developer", "Problem Solver","Environmentalist", "Chess Geek"],
             typeSpeed: 75,
             backSpeed: 40,
             loop: true
