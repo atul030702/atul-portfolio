@@ -22,10 +22,12 @@
     "build": "parcel build index.html"
   },
   "dependencies": {
+    "echarts": "^5.6.0",
     "parcel": "^2.14.4",
     "typed.js": "^2.1.0"
   },
   "devDependencies": {
+    "buffer": "^6.0.3",
     "svgo": "^3.3.2"
   }
 }
