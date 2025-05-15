@@ -1,3 +1,5 @@
+import * as echarts from "echarts";
+
 import { autoType, cleanUpAutoType } from "./modules/autotype.js";
 import { animateOnScroll } from "./modules/scrollAnimation.js";
 import { updateActiveLink, initSectionHighlighter } from "./modules/scrollSpy.js";
