@@ -1235,10 +1235,12 @@ body{
 }
 
 .location-map {
+    width: 100%;
+    max-width: 100%;
     margin: 0 auto;
 }
 
-#contact-form {
+.contact-form {
     width: 100%;
     padding: 0 10px;
 }
@@ -1262,7 +1264,8 @@ body{
     border-radius: 7.5px;
     font-size: 18px;
 }
-.form-element input:focus {
+.form-element input:focus,
+.form-element textarea:focus {
     border-color: #3B82F6;
 }
 
@@ -1276,7 +1279,6 @@ body{
    border-radius: 7.5px;
    transition: all 0.3s ease-in-out;
 }
-
 .submit-btn:hover {
     background-color: #1D4ED8;
 }
@@ -1284,4 +1286,16 @@ body{
 @media only screen
     and (max-width: 767px) {
 
+    .contact-container {
+        width: 100dvw;
+        min-height: 100dvh;
+        max-height: max-content;
+        height: 100%;
+        padding: 20px 10px;
+        overflow: hidden;
+    }
+
+    .contact-grid {
+        flex-wrap: wrap;
+    } 
 }
