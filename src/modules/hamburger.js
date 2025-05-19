@@ -9,8 +9,6 @@ function toggleSidebar(forceClose = false) {
     isOpen = shouldOpen;
 
     sidebar.classList.toggle("active", shouldOpen);
-    //hamburger.style.backgroundColor = shouldOpen ? "#64748b" : "#292f37";
-
 }
 
 function showSidebar() {

@@ -27,7 +27,7 @@ export function renderRadarChart() {
         { name: 'DevOps', max: 100 },
         { name: 'Testing', max: 100 },
         { name: 'Mobile Dev', max: 100 },
-        { name: 'UI/UX Design', max: 100 },
+        { name: 'UI/UX', max: 100 },
         { name: 'Backend', max: 100 }
       ],
       axisName: {

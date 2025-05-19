@@ -13,7 +13,7 @@ export function animateOnScroll() {
                 }
             }
         });
-    }, { threshold: 0.2, rootMargin: "0px" });
+    }, { threshold: 0.15, rootMargin: "0px" });
 
     sections.forEach((section) => observer.observe(section));
 }
