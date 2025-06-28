@@ -1024,10 +1024,24 @@ body{
     padding: 10px 15px;
     margin-bottom: 20px;
 
+    .project-name-and-link {
+        width: 100%;
+        display: inline-flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 15px;
+
+        h3 {
+            font-size: 1.5rem;
+            white-space: nowrap;
+            color: var(--text-color);
+        }
+    }
+
     img {
         width: 400px;
         height: 250px;
-        border-radius: 12px;
+        border-radius: 0.75rem;
     }
 }
 
@@ -1039,14 +1053,9 @@ body{
     margin-left: 20px;
     gap: 10px;
 
-    h3 {
-        font-size: 24px;
-        color: var(--text-color);
-    }
-
     p {
         color: #D1D5DB;
-        font-size: 18px;
+        font-size: 1rem;
         line-height: 1.25;
     }
 
@@ -1069,16 +1078,30 @@ body{
     a, p {
         text-decoration: none;
         color: var(--text-color);
-        font-size: 18px;
+        font-size: 1rem;
         font-weight: bold;
         background-color: #007acc;
         padding: 7.5px 15px;
         border-radius: 7px;
         transition: all 0.3s ease;
     }
+    a {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        white-space: nowrap;
+    }
     a:hover {
         background-color: #1D4ED8;
         transform: translateY(-2.5px);
+    }
+
+    .github-logo, .redirect-logo {
+        width: 25px !important;
+        height: 25px !important;
+        flex-grow: 0 !important;
+        flex-shrink: 0 !important;
     }
 }
 
@@ -1141,6 +1164,19 @@ body{
             flex-direction: column;
             gap: 15px;
 
+            .project-name-and-link {
+                width: 100%;
+                display: inline-flex;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 10px;
+
+                h3 {
+                    font-size: 1rem;
+                    white-space: nowrap;
+                }
+            }
+
             img {
                 min-width: 265px;
                 width: 100%;
@@ -1156,12 +1192,12 @@ body{
 
             h3 {
                 margin: 0 auto;
-                font-size: 22px;
+                font-size: 1.25rem;
                 font-weight: 600;
             }
 
             p {
-                font-size: 16px;
+                font-size: 1rem;
                 line-height: normal;
                 text-align: justify;
             }
@@ -1176,6 +1212,22 @@ body{
 
         .project-links {
             justify-content: center;
+        }
+
+        .project-links .github-logo, 
+        .project-links .redirect-logo {
+            width: 20px !important;
+            height: 20px !important;
+            object-fit: contain;
+        }
+
+        .project-links > a {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+            font-size: 0.875rem;
+            padding: 6px 12px;
         }
 } 
 
