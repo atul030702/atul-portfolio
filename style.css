@@ -1038,7 +1038,7 @@ body{
         }
     }
 
-    img {
+    .screenshot {
         width: 400px;
         height: 250px;
         border-radius: 0.75rem;
@@ -1096,13 +1096,15 @@ body{
         background-color: #1D4ED8;
         transform: translateY(-2.5px);
     }
+}
 
-    .github-logo, .redirect-logo {
-        width: 25px !important;
-        height: 25px !important;
-        flex-grow: 0 !important;
-        flex-shrink: 0 !important;
-    }
+.github-logo, 
+.redirect-logo {
+    width: 25px;
+    height: 25px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    object-fit: contain;
 }
 
 @media only screen 
@@ -1177,7 +1179,7 @@ body{
                 }
             }
 
-            img {
+            .screenshot {
                 min-width: 265px;
                 width: 100%;
                 min-height: 200px;
@@ -1214,13 +1216,6 @@ body{
             justify-content: center;
         }
 
-        .project-links .github-logo, 
-        .project-links .redirect-logo {
-            width: 20px !important;
-            height: 20px !important;
-            object-fit: contain;
-        }
-
         .project-links > a {
             display: inline-flex;
             justify-content: center;
@@ -1228,6 +1223,12 @@ body{
             gap: 5px;
             font-size: 0.875rem;
             padding: 6px 12px;
+        }
+
+        .github-logo, 
+        .redirect-logo {
+            width: 20px !important;
+            height: 20px !important;
         }
 } 
 
